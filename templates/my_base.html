@@ -1,0 +1,134 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="{% static 'images/rusty_codes.ico' %}" type="image/png">
+        <meta name="description" content="Rusty Codes | Personal Portfolio | Codes" >
+        <!-- Bootstrap CSS -->
+        {% include "cssfiles.html" %}
+        <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'images/Logo.png' %}">
+        <title>{% block title %}{% trans "Rusty Codes" %}{% endblock %}</title>
+    </head>
+    <body>
+        <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                <img src="{% static 'images/rusty_codes.ico' %}" width="30" height="30" class="d-inline-block align-top" alt="Mahesh's Logo">
+                <span>{% trans "Rusty Codes" %}</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'videos:all_videos' %}">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'articles:all_articles' %}">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'blog:all_blogs' %}">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expande="false">Social</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://github.com/lalitjarwal/Youtube" target="_blank">GitHub</a>
+                                <a class="dropdown-item" href="https://www.instagram.com/rustycodes/" target="_blank">Instagram</a>
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/mahesh811/" target="_blank">LinkedIn</a>
+                                <a class="dropdown-item" href="https://linktr.ee/lalitjarwal" target="_blank">LinkTree</a>
+                                <a class="dropdown-item" href="https://twitter.com/_beingmahesh/" target="_blank">Twitter</a>
+                                <a class="dropdown-item" href="hhttps://www.youtube.com/channel/UCptWPtRNjNEBFQ2DQ9xsLTw/videos" target="_blank">YouTube</a>
+                                <!-- <a class="dropdown-item" href="{% static 'images/MaheshResume.pdf' %}">Resume</a> -->
+                            </div>
+                        </li>
+                        <li>
+                            <a role="button" href="{% url 'user_profile:login' %}" class="btn btn-primary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+        {% include "jsfiles.html" %}
+        <br>
+        <div class="footer card text-center">
+            <div class="card-header">*******</div>
+            <div class="card-body">
+                <h5 class="card-title">Thanks For Visit Our Website!</h5>
+                <p class="card-text">“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” – Martin Fowler</p>
+                <a href="/" class="btn btn-primary">Go To Home</a>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/rustycodes/" target="_blank">
+                            <div class="maincard p-3">
+                                <div class="thecard">
+                                    <div class="thefront text-center py-2 facebook">
+                                        <div class="social-icon"> <i class="fa fa-facebook fa-2x"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/rustycodes/" target="_blank">
+                            <div class="maincard p-3">
+                                <div class="thecard">
+                                    <div class="thefront text-center py-2 instagram">
+                                        <div class="social-icon"> <i class="fa fa-instagram fa-2x"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCptWPtRNjNEBFQ2DQ9xsLTw/videos" target="_blank">
+                            <div class="maincard p-3">
+                                <div class="thecard">
+                                    <div class="thefront text-center py-2 youtube">
+                                        <div class="social-icon"> <i class="fa fa-youtube fa-2x"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="maincard p-3">
+                            <div class="thecard">
+                                <div class="thefront text-center py-2 whatsapp">
+                                    <div class="social-icon"> <i class="fa fa-whatsapp fa-2x"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="maincard p-3">
+                            <div class="thecard">
+                                <div class="thefront text-center py-2 pinterest">
+                                    <div class="social-icon"> <i class="fa fa-pinterest fa-2x"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer text-muted">Copyright © 2021 Rusty Codes</div>
+        </div>
+    </body>
+    {% block jsfilesurls %}{% endblock %}
+    <script type="text/javascript">
+        $(document).ready(function() {
+            {% block custom-js %}{% endblock %}
+        });
+    </script>
+</html>

@@ -27,7 +27,7 @@ SECRET_KEY = ')(zzl%wm$=(eeeg8o+5sdnaoo0lubf4%!7b-o*e0tx78*_8@_a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','192.168.1.5']
 
 
 # Application definition
@@ -39,13 +39,26 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'import_export',
+    'ckeditor',
+    'master',
+    'user_profile',
+    'home',
     'blog',
     'portfolio',
+    'todo',
+    'articles',
+    'videos',
+    'rest_api',
+    'dal',
+    'dal_select2',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -80,26 +93,27 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'myportfolio',
-        'USER': 'root',
-        'PASSWORD': 'mysql',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'myportfolio',
+#         'USER': 'root',
+# #	'PASSWORD': 'mysql',
+# 	'PASSWORD': 'Mysql@123',
+#         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+#         }
+#     }
+# }
 
 
 # Password validation
@@ -159,7 +173,9 @@ MEDIA_URL = "/media/"
 # MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_ROOT = BASE_DIR / "media"
 
-try:
-    from .local_settings import *
-except ImportError:
-    print('No local file. you are in production mode')
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     print('No local file. you are in production mode')
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'

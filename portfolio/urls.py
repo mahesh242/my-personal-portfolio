@@ -1,9 +1,9 @@
 from django.urls import path, include
 from django.conf import settings
-from . import views
+from portfolio import views as portfolio_views
 
 app_name = "portfolio"
 
 urlpatterns = [
-    path('', views.home, name="home"),
+    path('', portfolio_views.home, name="home"),
 ]

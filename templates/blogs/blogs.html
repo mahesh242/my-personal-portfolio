@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="container text-center">
-    <h2>Mahesh written {{blogs.count}} blog{{blogs.count|pluralize}}</h2>
+    <h2>Blog{{blogs.count|pluralize}}</h2>
 </div>
 <div class="card-group">
 {% for blog in blogs %}
@@ -16,4 +16,17 @@
     </div>
 {% endfor %}
 </div>
+{% comment %} {% for blog in blogs %}
+<a href="{% url 'blog:details' blog.id %}">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{blog.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{blog.date|date:'d M Y'}}</h6>
+            <p class="card-text">{{blog.description|striptags|truncatechars:100}}</p>
+            <a href="{% url 'blog:details' blog.id %}" class="card-link">Card link</a>
+            <a href="{% url 'blog:details' blog.id %}" class="card-link">Another link</a>
+        </div>
+    </div>
+</a>
+{% endfor %} {% endcomment %}
 {% endblock %}

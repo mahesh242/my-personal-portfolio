@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+    <div class="container">
+        <h2>{{blog.title}}</h2>
+        <span>{{blog.date|date:'F jS Y'}}</span>
+        <p>{{blog.description|safe}}</p>
+        {% if blog.external_links %}<a href="{{blog.external_links}}" class="card-link">Source</a>{% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    {% if success_msg %}
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> {{success_msg}}
+    </div>
+    {% endif %}
+    <div>
+        <form action="{% url 'user_profile:user_registrations' %}" method="POST">{% csrf_token %}
+            {% comment %} {{user_creation_form.as_p}} {% endcomment %}
+            
+            <p>
+                <label for="id_first_name">First Name:</label>
+                <input type="text" name="first_name" class="form-control" placeholder="First Name" maxlength="25" required="" id="id_first_name">
+            </p>
+            <p>
+                <label for="id_last_name">Last Name:</label>
+                <input type="text" name="last_name" class="form-control" placeholder="Last Name" maxlength="25" required="" id="id_last_name">
+            </p>
+            <p>
+                <label for="id_email_name">Email Name:</label>
+                <input type="email" name="email_name" class="form-control" placeholder="Email Name" maxlength="50" required="" id="id_email_name">
+            </p>
+            <p>
+                <label for="id_username">Username:</label>
+                <input type="text" name="username" class="form-control" placeholder="Username" maxlength="10" required="" id="id_username">
+            </p>
+            
+            {% comment %} {{ user_details_form.as_p }} {% endcomment %}
+
+            <p>
+                <label for="id_password">Password:</label>
+                <input type="password" name="password" class="form-control" id="id_password" placeholder="Password" required="" autocomplete="off">
+            </p>
+            <p>
+                <label for="id_first_name">Confirm Password:</label>
+                <input type="password" name="confirm_password" class="form-control" id="id_confirm_password" placeholder="Confirm Password" required="" autocomplete="off">
+            </p>
+            <button type='submit' class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <a role="button" href="{% url 'user_profile:login' %}" class="btn btn-success">Signin</a>
+    </div>
+</div>
+
+{% include "jsfiles.html" %}
+
+{% endblock %}
+
+{% block jsfilesurls %}
+
+{{user_details_form.media}}
+
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2 class="mt-5">Videos</h2>
+<hr>
+<div class="row">
+    {% if all_videos %}
+        {% for video in all_videos %}
+          <div class="card" style="width: 50%;">
+            <img class="card-img-top" src="{% if video.title_images %}{{ video.title_images.url }}{% else %} {% static 'images/djangologo.png' %}{% endif %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ video.title }}</h5>
+              <p>{{ video.tags }}</p>
+              <p class="card-text">{{video.description|striptags|truncatechars:100}}</p>
+              <a href="{% url 'videos:watch_video' video_id=video.id %}" class="btn btn-primary">Watch</a>
+            </div>
+          </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+
+
+{% if flutter_articles %}
+    <h2 class="mt-5">Flutter article{{flutter_articles|pluralize}}</h2>
+    <hr>
+    <div class="row">
+        {% for article in flutter_articles %}
+            <a href="{% url 'articles:article_details' article.id %}">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        {% if article.tags %}{{article.tags}}{% endif %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{article.created_date|date:'d M Y'}}</h6>
+                        {% if article.avg_read_time %}{{article.avg_read_time}}{% endif %}
+                        {% if article.title_images %} <img src="{{ article.title_images.url }}" class="img-fluid mb-2"> {% endif %}
+                        <p class="card-text">{{article.description|striptags|truncatechars:100}}</p>
+                        <a href="{% url 'articles:article_details' article.id %}" class="card-link">More details...</a>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if django_articles %}
+    <h2 class="mt-5">Django article{{django_articles|pluralize}}</h2>
+    <hr>
+    <div class="row">
+        {% for article in django_articles %}
+            <a href="{% url 'articles:article_details' article.id %}">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        {% if article.tags %}{{article.tags}}{% endif %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{article.created_date|date:'d M Y'}}</h6>
+                        {% if article.avg_read_time %}{{article.avg_read_time}}{% endif %}
+                        {% if article.title_images %} <img src="{{ article.title_images.url }}" class="img-fluid mb-2"> {% endif %}
+                        <p class="card-text">{{article.description|striptags|truncatechars:100}}</p>
+                        <a href="{% url 'articles:article_details' article.id %}" class="card-link">More details...</a>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if linux_articles %}
+    <h2 class="mt-5">Linux article{{linux_articles|pluralize}}</h2>
+    <hr>
+    <div class="row">
+        {% for article in linux_articles %}
+            <a href="{% url 'articles:article_details' article.id %}">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        {% if article.tags %}{{article.tags}}{% endif %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{article.created_date|date:'d M Y'}}</h6>
+                        {% if article.avg_read_time %}{{article.avg_read_time}}{% endif %}
+                        {% if article.title_images %} <img src="{{ article.title_images.url }}" class="img-fluid mb-2"> {% endif %}
+                        <p class="card-text">{{article.description|striptags|truncatechars:100}}</p>
+                        <a href="{% url 'articles:article_details' article.id %}" class="card-link">More details...</a>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<h2 class="mt-5">Django Projects</h2>
+<hr>
+<div class="row">
+  {% for project in projects %}
+    <div class="col-lg-4 col-md-6">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+      {% if project.url %}
+        <a target="_blank" href="{{ project.url }}"><h3>{{ project.title }}</h3></a>
+      {% else %}
+        <h3>{{ project.title }}</h3>
+      {% endif %}
+      <p>{{ project.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- 21:9 aspect ratio -->
+<div class="container">
+    <div class="embed-responsive embed-responsive-21by9">
+        <iframe width="560" height="315" src="{{video.video_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    <h3>{{video.title}}</h3>
+    {% if video.description %}<p>{{video.description|safe}}</p>{% endif %}
+</div>
+{% endblock %}

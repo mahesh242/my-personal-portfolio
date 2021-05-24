@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    
+    {% if  success_msg %}
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> {{success_msg}}
+    </div>
+    {% endif %}
+    <div>
+        <form action="{% url 'user_profile:login' %}" method="POST">{% csrf_token %}
+            {{ login_form.as_p }}
+            <button type='submit' class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <br>
+    <div>
+        <a role="button" href="{% url 'user_profile:login' %}" class="btn btn-danger">Forgot Password</a>
+        <a role="button" href="{% url 'user_profile:user_registrations' %}" class="btn btn-success">Signin</a>
+    </div>
+</div>
+
+{% endblock %}

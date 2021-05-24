@@ -23,9 +23,16 @@ from django.conf.urls.static import static
 
 
 urlpatterns = i18n_patterns(
-    url('admin/', admin.site.urls),
-    url('portfolio/', include('portfolio.urls')),
-    url('', include('blog.urls')),
+    url('rusty_codes_admin/', admin.site.urls),
+    url('', include('home.urls')),
+    url('my_portfolio/', include('portfolio.urls')),
+    url('user_profile/', include('user_profile.urls')),
+    url('blog/', include('blog.urls')),
+    url('articles/', include('articles.urls')),
+    url('my_todo/', include('todo.urls')),
+    url('master_data/', include('master.urls')),
+    url('videos/', include('videos.urls')),
+    url(r'^api/', include(('rest_api.urls', 'rest_api'), namespace='rest_api')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

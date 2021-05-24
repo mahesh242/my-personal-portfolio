@@ -1,63 +1,137 @@
 {% load i18n static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="{% static 'images/rusty_codes.ico' %}" type="image/png">
+        <meta name="description" content="Rusty Codes | Personal Portfolio | Codes" >
+        <!-- Bootstrap CSS -->
+        {% include "cssfiles.html" %}
+        <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{% static 'images/Logo.png' %}">
+        <title>{% block title %}{% trans "Rusty Codes" %}{% endblock %}</title>
+    </head>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+        <!-- Main Container -->
+        <div class="wrapper d-flex">
+            <div class="navbar-headers">
+                <div class="container d-flex justify-content-between">
+                    <a class="navbar-brand" href="/">Rusty Codes</a>
+                </div>
+            </div>
+            <div class="navbar-header right">
+                <div class="container d-flex justify-content-between">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" value="Search...">
+                        <div class="search-image">
+                            <img src="{% static 'images/magnifying-glass.svg' %}" alt="magnifying-glass">#
+                        </div>
+                    </form>
+                    <!-- <ul class="icon d-flex list-unstyled text-end">
+                        <li class="nav-icon dropdown header_profile_img ">
+                            <a href="javascript:void(0)">
+                                <img src="{% static 'images/userphoto.jpg' %}" alt="image" class="image_user">
+                            </a>
+                            <ul class="dropdown-menu list-unstyled drop_shw">
+                                <li class="dropdown-list">
+                                    <a href="/">
+                                        <span class="svg_icons svg_menu_icons menu-list">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><path d="M32,0C14.3268995,0,0,14.3268003,0,32c0,17.6730003,14.3268995,32,32,32s32-14.3269997,32-32   C64,14.3268003,49.6730957,0,32,0z M32,62C15.4579,62,2,48.5419998,2,32C2,15.4579,15.4579,2,32,2s30,13.4579,30,30   C62,48.5419998,48.542099,62,32,62z"></path><path d="M41,25h-2.1653023c0.0684013-0.3834991,0.1077003-0.7723007,0.1077003-1.1660995   c0-3.7362995-3.1142998-6.7763004-6.9423981-6.7763004s-6.9424,3.0400009-6.9424,6.7763004   c0,0.3937988,0.0393009,0.7826004,0.1077003,1.1660995H23c-2.2091999,0-4,1.7908001-4,4v14c0,2.2090988,1.7908001,4,4,4h18   c2.209198,0,4-1.7909012,4-4V29C45,26.7908001,43.209198,25,41,25z M26.9424,23.8339005   c0-2.6972008,2.2695007-4.8915997,5.0576-4.8915997s5.0575981,2.1943989,5.0575981,4.8915997   c0,0.3962994-0.0522003,0.7855988-0.1495972,1.1660995h-9.8160019C26.9946003,24.6194992,26.9424,24.2301998,26.9424,23.8339005z    M43,43c0,1.1026993-0.8972015,2-2,2H23c-1.1028004,0-2-0.8973007-2-2V29c0-1.1028996,0.8971996-2,2-2h18   c1.1027985,0,2,0.8971004,2,2V43z"></path></svg>
+                                        </span>
+                                        <span class="change_pass">change password</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-list">
+                                    <a href="/">
+                                        <span class="svg_icons svg_menu_icons">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 363.025 363.024" style="enable-background:new 0 0 363.025 363.024;" xml:space="preserve"><path style="fill:#030303;" d="M181.512,0C81.43,0,0,81.43,0,181.513c0,100.088,81.43,181.512,181.512,181.512   c100.089,0,181.513-81.424,181.513-181.512C363.025,81.43,281.601,0,181.512,0z M181.512,351.314   c-93.632,0-169.802-76.175-169.802-169.802C11.71,87.88,87.88,11.71,181.512,11.71c91.66,0,166.543,73.014,169.654,163.936   l-189.941-0.369l32.959-32.958l-8.28-8.28l-47.064,47.065l47.886,47.88l8.282-8.279l-33.725-33.726l189.895,0.378   C348.067,278.284,273.184,351.314,181.512,351.314z"></path></svg>
+                                        </span>
+                                        <span class="change_pass"> log Out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <!-- navbar -->
+            <div class="sidemenu" id="sideMenuLeft">
+                <!-- side nav bar -->
+                <div class="side-navbar" id="navbar">
+                    <div class="menubar">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="navbar-nav list-unstyled">
+                                    <!-- <li class="nav-item d-flex justify-content-between" >
+                                        <a href="{% url 'videos:all_videos' %}" class="d-flex">
+                                            <div class="navbar-image">
+                                                <img src="{% static 'images/search.png' %}" alt="house">
+                                            </div>
+                                        </a>
+                                    </li> -->
+                                    <li class="nav-item d-flex justify-content-between" >
+                                        <a href="{% url 'videos:all_videos' %}" class="d-flex">
+                                            <div class="navbar-image">
+                                                <img src="{% static 'images/video.png' %}" alt="house">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex justify-content-between" >
+                                        <a href="{% url 'articles:all_articles' %}" class="d-flex">
+                                            <div class="navbar-image">
+                                                <img src="{% static 'images/article.png' %}" alt="ip_admission">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-flex justify-content-between" >
+                                        <a href="{% url 'blog:all_blogs' %}" class="d-flex">
+                                            <div class="navbar-image">
+                                                <img src="{% static 'images/blog.png' %}" alt="house">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nav-item d-flex justify-content-between" >
+                                        <a href="{% url 'user_profile:login' %}" class="d-flex">
+                                            <div class="navbar-image">
+                                                <img src="{% static 'images/login.png' %}" alt="house">
+                                            </div>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="change_pwd" id="rightData">
+                <main>
+                    {% block breadcrumbs %}{% endblock %}
+                    <div class="content">
+                        <div class="rightcontent">
+                            <div class="container-fluid">
+                                {% block content %}{% endblock %}
+                            </div>
+                         </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- {% include "footer.html" %} -->
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  {% include "cssfiles.html" %}
-
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" href="{% static 'images/Logo.png' %}">
-
-  <title>{% block title %}{% trans "Personal Portfolio" %}{% endblock %}</title>
-  
-</head>
-
-<body>
-
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'portfolio:home' %}">
-        <img src="{% static 'images/Logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="Mahesh's Logo">
-        <span>{% trans "Mahesh Meena" %}</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% static 'images/MaheshResume.pdf' %}">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/mahesh811/" target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/_beingmahesh/" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    {% block content %}{% endblock %}
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-
+        <!-- JavaScript files -->
+        {% include "jsfiles.html" %}
+        <!-- JavaScript files ends here-->
+        
+        {% block jsfilesurls %}{% endblock %}
+        <script type="text/javascript">
+            $(document).ready(function() {
+                {% block custom-js %}{% endblock %}
+            });
+        </script>
+    </body>
 </html>

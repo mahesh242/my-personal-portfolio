@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if flutter_articles %}
+    <div class="container text-center">
+        <h2>Flutter {{flutter_articles}} article{{flutter_articles|pluralize}}</h2>
+    </div>
+    <div class="row">
+        {% for article in articles_data %}
+            {% if article.article_category.category == 'Flutter' %}
+            <a href="{% url 'articles:article_details' article.id %}">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        {{article.tags}}
+                        {{article.created_date|date:'F jS Y'}}
+                        {{article.avg_read_time}}
+                        {% comment %} <img src="{{ article.image.url }}" class="img-fluid mb-2"> {% endcomment %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{article.created_date|date:'d M Y'}}</h6>
+                        <p class="card-text">{{article.description|striptags|truncatechars:100}}</p>
+                        <a href="{% url 'articles:article_details' article.id %}" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% if django_articles %}
+    <div class="container text-center">
+        <h2>Django {{django_articles}} article{{django_articles|pluralize}}</h2>
+    </div>
+    <div class="row">
+        {% for article in articles_data %}
+            {% if article.article_category.category == 'Django' %}
+            <a href="{% url 'articles:article_details' article.id %}">
+                <div class="card" style="width: 50%;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{article.title}}</h5>
+                        {{article.tags}}
+                        {{article.created_date|date:'F jS Y'}}
+                        {{article.avg_read_time}}
+                        {% comment %} <img src="{{ article.image.url }}" class="img-fluid mb-2"> {% endcomment %}
+                        <h6 class="card-subtitle mb-2 text-muted">{{article.created_date|date:'d M Y'}}</h6>
+                        <p class="card-text">{{article.description|striptags|truncatechars:100}}</p>
+                        <a href="{% url 'articles:article_details' article.id %}" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h2 class="mt-5">Flutter Videos</h2>
+    <hr>
+    <div class="row">
+        {% if all_videos %}
+            {% for video in all_videos %}
+              <div class="card" style="width: 50%;">
+                <img class="card-img-top" src="{% if video.title_images %}{{ video.title_images.url }}{% else %} {% static 'images/djangologo.png' %}{% endif %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{ video.title }}</h5>
+                  <p>{{ video.tags }}</p>
+                  <p class="card-text">{{ video.title }}</p>
+                  <a href="{% url 'videos:watch_video' video_id=video.id %}" class="btn btn-primary">Watch</a>
+                </div>
+              </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

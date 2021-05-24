@@ -3,15 +3,20 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgba(0,0,0,.5) !important;
+  color: saddlebrown !important;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color:#acc4d859;
 }
 
 #blogtitle {
   font-size: 6rem;
+}
+
+.footer .card .text-center{
+  background-color:#ee0d2b59 !important;
 }
 
 @media (min-width: 992px) {
@@ -21,4 +26,2040 @@ body {
   #blogdetailtitle {
       font-size: 5rem;
   }
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+
+/* body {
+    background-color: #f7f6f6
+} */
+
+.social-list {
+    display: inline-flex
+}
+
+.social-list li {
+    list-style: none;
+    margin-right: 10px
+}
+
+.maincard {
+    position: relative;
+    width: 120px;
+    height: 80px
+}
+
+.thecard {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
+}
+
+/* .thecard:hover {
+    transform: rotateY(180deg)
+} */
+
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-color: hidden;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hidden;
+    color: #fff;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px
+}
+
+.social-text small {
+    font-size: 20px
+}
+
+@media (max-width:700px) {
+    .social-list {
+        display: block
+    }
+}
+
+.facebook {
+    background: #3b5998
+}
+
+.instagram {
+    background: #3f729b
+}
+
+.youtube {
+    background: #ff0000
+}
+
+.whatsapp {
+    background: #4dc247
+}
+
+
+
+
+
+
+
+
+
+/*** HIMS CSS Starts Here ***/
+
+/*************/
+/*common css*/
+/*************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F9FBFD;
+}
+
+/***************/
+/***header*****/
+/***************/
+
+.side-navbar {
+    background-color: rgba(113,106,202,0.6);
+    display: none;
+}
+.d-flex:hover {   
+    text-decoration: none;
+}
+.side-navbar.active {
+    display: block;
+}
+.administrator {
+    display: none;
+}
+.navbar-header.right {  
+    display: none;
+}
+.navbar-headers {  
+    height: 40px;
+}
+.nav-icon {
+    cursor: pointer;
+}
+.side-navbar li {
+    padding: 5px 20px;
+}
+.side-navbar .nav-item a:hover{
+    color: saddlebrown;
+}
+.nav-item a{
+    color: #fff;
+}
+.nav-item.active {
+    background: #F8F8FF;
+}   
+.nav-item.active a {
+    color: #605ABC;
+}  
+.nav-item:hover {
+    background: saddlebrown;
+}
+.navbar-headers {
+    height: 60px;
+    width: 100%;
+    background-color: #716ACA;
+}
+/* .container.d-flex.justify-content-between {
+    margin-top: 11px;
+} */
+a.navbar-brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-nav .nav-item {
+    padding: 25px 10px;
+}
+.navbar-nav {
+    padding: 20px 0px;
+}
+.menubar {
+    color: #fff;
+    border: none;
+    background: white;
+    /* margin-top: 5px; */
+}
+.bars1 {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.bars2 {
+    display: block;
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.bars3 {
+    display: block;
+    width: 11px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+form.form-inline.my-2.my-lg-0 {
+    /* display: none; */
+    visibility: hidden;
+}
+button#smMenu {
+    display: block;
+    cursor: pointer;
+}
+/***************/
+/***header end*****/
+/***************/
+
+
+
+/*************************************/
+/*ip admission and registration css*/
+/*************************************/
+.container-fluid {
+    padding: 15px;
+}
+li.links {
+    margin-left: 2px;
+    cursor: pointer;
+}
+li.links img {
+    width: 80%;
+}
+.title h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+.title span {
+    font-size: 8px;
+    color: #686868;
+}
+.title {
+    line-height: 0;
+    height: 60px;
+}
+.subheading {
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 15px 0px;
+    background-color: #fff;
+}
+.subheading h3 {
+    color: #000000;
+    font-size: 20px;
+    padding: 15px;
+}
+/*************************************/
+/*ip admission and registration css*/
+/*************************************/
+
+
+
+/*************************************/
+/* ip admission details right content*/
+/*************************************/
+
+form.form-inline.my-2.my-lg-0.search-button {
+    visibility: visible;
+}
+
+/* .col-12.d-flex.justify-content-between {
+    margin: 10px 0px;
+} */
+table.table tr {
+    border-bottom: 1px solid #E8E8E8;
+}
+.table {
+    width: 97%;
+    margin: auto;
+    border-collapse: collapse;
+}
+.table th {
+    font-size: 12px;
+    color: #686868;
+    border-bottom: 1px !important;
+}
+.table td {
+    font-size: 11px;
+    color: #686868;
+}
+.button-admission {
+    text-align: end;
+    margin: 20px 15px;
+}
+.pre {
+    background-color: #aeaeae;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 3px 10px;
+    margin-right: 4px;
+}
+.next {
+    background-color: #716ACA;
+    border: none;
+    font-size: 12px;
+    border-radius: 2px;
+    color: #fff;
+    padding: 3px 10px;
+}
+.patientregistration.ip-admission .form-group {
+    margin-bottom: 0;
+}
+.form-group.ip-admission label {
+    font-size: 12px;
+    font-weight: unset !important;
+    color: #686868;
+}
+.image {
+    width: 28px;
+    height: 28px;
+    background-color: #716ACA;
+    text-align: center;
+    margin-top: 14px;
+    margin-right: 8px;
+    border-radius: 2px;
+    margin-left: 14px;
+}
+.images {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #716ACA;
+    text-align: center;
+    margin-top: 14px;
+    border-radius: 2px;
+}
+.image-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+.visit {
+    padding-left: 15px;
+}
+.search-container {
+    padding: 20px 33px;
+    padding-top: 13px;
+    margin-top: -15px;
+}
+.patientregistration.ip-admission {
+    margin: 20px 0px;
+}
+
+/*************************/
+/*ip admission detail end*/
+/*************************/
+
+
+
+/*************************/
+/*ip registration*/
+/*************************/
+.patientregistration {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    margin: 10px 0px; 
+}
+.personal-details h5 {
+    font-size: 20px;
+}
+.form-control.checkbox-select {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 12px;
+    margin-top: -7px;
+}
+.select-radio.form-control {
+    background-color: #F8F8F8;
+    border-radius: 2px;
+    border: none;
+    font-size: 12px;
+    margin-top: -6px;
+}
+.personal-details {
+    padding: 20px 23px;
+    border-bottom: 1px solid #CCCCCC;
+}
+input#exampleRadios1 {
+    margin-top: 2px;
+    margin-right: 3px;
+}
+.selects {
+    position: relative;
+}
+.selects select {
+    -webkit-appearance: none;
+    outline: none;
+}
+.selects:after {
+    content: "";
+    position: absolute;
+    top: 42%;
+    right: 10px;
+    border-style: solid;
+    border-width: 6px 3.5px 0px 3.5px;
+    border-color: #A4A4A4 transparent;
+    pointer-events: none;
+}
+.selects:before {
+    content: "";
+    background-image: url("../image/calender.svg");
+    background-color: #ECECEC;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+.select {
+    position: relative;
+}
+.select select {
+    -webkit-appearance: none;
+    outline: none;
+}
+.select:after {
+    content: "";
+    position: absolute;
+    top: 42%;
+    right: 10px;
+    border-style: solid;
+    border-width: 6px 3.5px 0px 3.5px;
+    border-color: #A4A4A4 transparent;
+    pointer-events: none;
+        z-index: 3;
+}
+.select:before {
+    content: "";
+    background-color: #ECECEC;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 0;
+    width: 30px;
+    z-index: 2;
+    height: 30px;
+    pointer-events: none;
+}
+.form-group {
+    color: #686868;
+    position: relative;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.active_usr {
+    margin-top: 25px;
+}
+.form-group.calendar {
+    position: relative;
+}
+.calender-image img {
+    padding-top: 11px;
+}
+.button {
+    text-align: center;
+    margin: 30px 0px;
+}
+.save {
+    border: none;
+    background-color: #35CD3A;
+    font-size: 12px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.odssy {
+    border: none;
+    background-color: #AEAEAE;
+    font-size: 12px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.clear {
+    border: none;
+    background-color: #F3545D;
+    font-size: 12px;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 2px;
+}
+.form-group label {
+    font-weight: 600 !important;
+    font-size: 12px;
+}
+.form-group {
+    color: #686868;
+    line-height: 30px;
+}
+select.form-control.checkbox-select-odssy {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 12px;
+    margin-top: -7px;
+}
+label.check {
+    position: relative;
+    padding-left: 20px;
+}
+label.govt {
+    color: #000000;
+}
+label.freeexemption {
+    position: relative;
+    padding-left: 20px;
+    color: #686868;
+}
+.freeexemption input {
+    display: none;
+}
+.check input {
+    display: none;
+}
+span.checkboxcreate {
+    width: 16px;
+    border: 1px solid rgba(204,204,204,0.6);
+    height: 16px;
+    position: absolute;
+    border-radius: 2px;
+    top: -2px;
+    left: 0;
+}
+span.checkboxcreate1 {
+    width: 16px;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    position: absolute;
+    border-radius: 2px;
+    top: -2px;
+    left: 0;
+}
+.freeexemption input:checked + .checkboxcreate1 {
+    border: 1px solid #0000;
+}
+.freeexemption input:checked + .checkboxcreate1:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.check input:checked + .checkboxcreate {
+    border: 1px solid #cccccc;
+    color: #686868;
+}
+.check input:checked + .checkboxcreate:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*************************/
+/*ip registration ends*/
+/*************************/
+
+
+
+/*************************/
+/* login page start*/
+/*************************/
+.container-fluid.d-flex.justify-content-center.align-items-center {
+    background-image: linear-gradient(rgba(113,106,202,0.6),rgba(113,106,202,0.6)), url("../image/7957.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 757px;
+}
+.col-8.m-auto {
+    background-color: #fff;
+    padding: 50px;
+}
+.box {
+    width: 60px;
+    background-color: #8A8A8A;
+    height: 60px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+}
+h4.text-center {
+    margin: 25px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input.form-control.username {
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 25px;
+}
+input.form-control.username1 {
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+}
+input.text-center.form-control.submit {
+    background-color: #716ACA;
+    border: none;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-top: 36px;
+    color: #fff;
+}
+h5.forget.text-center a {
+    color: #716ACA;
+    font-size: 12px;
+    font-weight: 300;
+}
+h5.forget.text-center {
+    margin-top: 30px;
+}
+form.myform {
+    margin-top: 60px;
+}
+/*************************/
+/* login page ends*/
+/*************************/
+
+
+
+/************************/
+/****landscape view*********/
+/************************/
+@media only screen and (min-width: 576px) {
+    /******************/
+    /**main content***/
+    /*****************/
+    .title h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .title span {
+        font-size: 13px;
+        color: #686868;
+    }
+    .container-fluid {
+        padding: 20px;
+    }
+    li.links img {
+        width: 100%;
+    }
+    li.links {
+        margin-left: 13px;
+    }
+}
+
+
+
+/******************/
+/**tab view***/
+/*****************/
+@media only screen and (min-width: 768px) {
+    /******************/
+    /**main content***/
+    /*****************/
+    .title h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .title span {
+        font-size: 12px;
+        color: #686868;
+    }
+    .container-fluid {
+        padding: 20px;
+    }
+    li.links img {
+        width: 100%;
+    }
+    li.links {
+        margin-left: 13px;
+    }
+}
+
+
+
+/******************/
+/**desktop views***/
+/*****************/
+@media only screen and (min-width: 992px) {
+
+    /**************/
+    /**header**/
+    /**************/
+    /* .container.d-flex.justify-content-between {
+        margin-top: 10px;
+    } */
+    .side-navbar {
+        display: block;
+        background-color: #fff;
+    }
+    .sidemenu {
+        width: 6.5%;
+        position: fixed;
+    }
+    .administrator {
+        display: block;
+    }
+    .side-navbar {
+        min-height: 100%;
+    }
+    .navbar-header.right {
+        display: block;
+        width: 93.5%;
+        height: 40px;
+    }
+    .navbar-headers {
+        height: 40px;
+    }
+    .red-alert {
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 21px;
+        right: 111px;
+    }
+    .navbar-headers {
+        background-color: saddlebrown;
+        max-width: 6.5%;
+        height: 60px;
+        position: fixed;
+    }
+    a.navbar-brand {
+        color: #fff;
+    }
+    button.menubar {
+        color: #fff;
+        border: none;
+        background: none;
+    }
+    .navbar-header.right {
+        /* background-color: #716ACA; */
+        height: 60px;
+    }
+    .search-image {
+        position: absolute;
+        top: 6px;
+        left: 12px;
+    }
+    #navbar {
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .nav-icon img {
+        width: 80%;
+    }
+    ul.icon.d-flex.list-unstyled.text-end {
+        margin-top: 6px;
+    }
+    li.nav-icon {
+        margin-left: 10px;
+    }
+    .administrator {
+        padding: 14px;
+        border-bottom: 1px solid #00000029;
+    }
+    h5.pname {
+        font-size: 14px;
+        color: #000000;
+    }
+    h5.admin {
+        font-size: 12px;
+        color: #000000;
+    }
+    .admin-name {
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    .sidebar {
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    .navbar-nav.list-unstyled {
+        font-size: 14px;
+        text-indent: 12px;
+        padding: 21px 0px;
+    }
+    li.nav-item {
+        padding: 8px 0px;
+    }
+    li.nav-item a{
+        color: #000000;
+    }
+    li.nav-item.active {
+        background: #F8F8FF;
+    }   
+    li.nav-item.active a {
+        color: #605ABC;
+    }  
+    .arrow-down {
+        padding-right: 10px;
+    }
+
+    /***********************/
+    /***main content**/
+    /**********************/
+    form.form-inline.my-2.my-lg-0 {
+        position: relative;
+    }
+    .wrapper {
+        display: flex;
+    }
+    input.form-control.mr-sm-2 {
+        height: 41px;
+        width: 380px;
+        background-color: #605ABC;
+        color: #fff;
+        font-size: 12px;
+        border: none;
+        margin-bottom: 5px;
+        padding-left: 40px;
+    }
+    .personal-details h5 {
+        font-size: 20px;
+    }
+    .content {
+        width: 98%;
+        margin-left:8%
+        
+    }
+    .container-fluid {
+        padding: 25px;
+    }  
+}
+/**********meghana added *****************/
+.a1{
+    color: #686868;
+}
+a:hover{
+    color:saddlebrown;
+    text-decoration: none;
+}
+
+.table_icon a svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+.table_icon a svg path {
+    fill: #007bff;
+}
+
+
+ul.pagination {
+    float: right;
+    margin-top: 27px;
+    margin-bottom: 21px;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+p.disply_entries_cnt.align_entry {
+    font-size: 12px;
+    margin-left: 15px;
+}
+.patientregistration.ip-admission .form-group {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.image-box {
+    margin-top: 12px;
+}
+p.disply_entries_cnt.align_entry {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.table-responsive {
+    overflow: auto !important;
+}
+.top_header_align {
+    float: right;
+    margin-top: -51px;
+}
+.msg_popup .modal-body {
+    text-align: center;
+    color: #191919;
+    font-weight: 100;
+    padding: 15px;
+}
+.modal-footer {
+    padding: 0rem;
+}
+.msg_popup .modal-header {
+    padding: 0;
+    border: 0;
+}
+.modal.fade .modal-dialog {
+    padding-left: 99px;
+}
+th.address_wid {
+    width: 201px;
+}
+label.error {
+    color: #ef0000 !important;
+    
+}
+label.error {
+    position: absolute;
+}
+
+/***************/
+/***dropdown*****/
+/***************/
+.list-unstyled {
+    font-size: 13px;
+}
+li.list-item a {
+    text-decoration: none;
+    color: #fff;
+    color: black !important;
+    padding-left: 5px;
+}
+.list-item1 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.list-item a {
+    font-weight: 100!important;
+}
+.list-item:hover {
+    background: saddlebrown;
+}
+li.list-item1 ul {
+    text-indent: initial;
+}
+.side-navbar .list-item a:hover{
+    color: saddlebrown;
+}
+.side-navbar .list-item1 a:hover{
+    color: saddlebrown;
+}
+.dropdown-content ul {
+    padding: 0;
+}
+.dropdown-content {
+    display: none;
+}
+.dropdown-content.active {
+    display: block;
+}
+.dropdown-content li.active_clr.list-item.patient_regn.active {
+    display: block;
+}
+/***************/
+/***dropdown end*****/
+/***************/
+/*************************/
+/*forget password*/
+/*************************/
+p.backtosignin {
+    padding-top: 58px;
+}
+.box1 {
+    width: 68px;
+    background-color: #6660B2;
+    height: 68px;
+    border-radius: 11px;
+    transform: rotate(45deg);
+}
+.header.d-flex.justify-content-between {
+    padding: 35px 20px;
+}
+li.list-link a {
+    font-size: 12px;
+    color: #B1B1B1;
+}
+li.list-link1 a {
+    color: #716ACA;
+    font-size: 12px;
+}
+.forget-content {
+    text-align: center;
+}
+.form-group.d-flex {
+    margin-left: 50px;
+}
+h1.heading-forget {
+    color: #000000;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 40px 0px;
+}
+p.forget-para {
+    font-size: 14px;
+    margin: 38px 20px;
+    margin-bottom: 108px;
+}
+.forget-password.m-auto {
+    text-align: center;
+    padding: 25px 0px;
+}
+input.email {
+    width: 310px;
+    height: 38px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    color: #000000;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+input.submit1 {
+    border: 1px solid #716ACA;
+    background-color: white;
+    color: #716ACA;
+    font-size: 14px;
+    margin-left: 10px;
+    width: 97px;
+    height: 38px;
+    border-radius: 2px;
+}
+.col-12.forget-passward.m-auto {
+    padding: 0px 277px;
+    position: relative;
+}
+.col-12.forget-passward.m-auto p {
+    color: #000000;
+    font-size: 14px;
+    padding-top: 65px;
+}
+p.backtosignin {
+    color: #686868;
+}
+/*************************/
+/*forget password*/
+/*************************/
+
+ /*********************/
+    /**forget password**/
+    /*********************/
+    h1.heading-forget {
+        color: #000000;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 40px 0px;
+    }
+    input.email {
+        width: 310px;
+        height: 38px;
+        background-color: white;
+        border: 1px solid #cccccc;
+        font-size: 12px;
+        color: #000000;
+        border-radius: 2px;
+        padding-left: 10px;
+    }
+    input.submit1 {
+        border: 1px solid #716ACA;
+        background-color: white;
+        color: #716ACA;
+        font-size: 14px;
+        margin-left: 10px;
+        width: 82px;
+        height: 38px;
+        border-radius: 2px;
+    }
+    .col-sm-6.col-xs-6.col-md-4.m-auto {
+        padding: 50px 25px;
+    }
+}
+.modal-full {
+    max-width: 100%;
+    margin: 0;
+}
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+.    {
+    border-bottom: none;
+}
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    border-radius: .3rem;
+    outline: 0;
+}
+  
+
+
+
+/*************************/
+/* change password*/
+/*************************/
+
+.container-fluid.change {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #ffffff;
+    margin: 40px 0px;
+}
+h1.change-password {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    padding: 40px 0px;
+}
+label.newpassword {
+    font-size: 12px;
+    color: #686868;
+}
+
+label.newpassword {
+    padding-top: 10px;
+}
+.confirm {
+    font-size: 12px;
+    color: #686868;
+}
+input.form-control.changepassword {
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+.col-6.m-auto {
+    padding-top: 20px;
+    padding-bottom: 150px;
+}
+.title1 h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+.title1 span {
+    font-size: 12px;
+    color: #000000;
+}
+.title1 {
+    line-height: 0;
+}
+input.text-center.form-control.submit1 {
+    background-color: #8782D2;
+    border: none;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-top: 36px;
+    color: #fff;
+    width: 100%;
+    margin-left: -2px;
+}
+.form-group.change {
+    padding-bottom: 10px;
+}
+.container {
+    /* margin-top: 24PX; */
+    /* padding: 15px; */
+}
+.col-sm-6.col-xs-6.col-md-4.m-auto {
+    padding: 4px 0px;
+}
+.row2 {
+    margin-top: -10px;
+    margin-left: 1px;
+    margin-right: -11px;
+    
+}
+.row3{
+    margin-top: -37px;
+}
+/*************************/
+/* change password ends*/
+/*************************/
+
+    button.add {
+        background-color: #716ACA;
+        width: 55px;
+        height: 21px;
+        color: white;
+        font-size: 12px;
+        margin-top: 10px;
+        border: none;
+		cursor: pointer;
+    }
+    
+/*************/
+/*forgot popup*/
+/**************/
+p.backtosignin {
+    color: #686868;
+    display: inline;
+    font-size: 12px;
+}
+
+.perdon_detail_header {
+    padding: 20px 30px;
+    justify-content: center;
+    border-bottom: 1px solid #ced4da;
+}
+
+li.list-link {
+    margin-top: 24px;
+}
+div#forgetPassward {
+    background-color: white;
+}
+.width_change {
+width: 325%;
+    margin-left: -485px;
+    margin-top: -29px;
+}
+.modal-header.forget-link-header1 {
+    border-bottom: none;
+}
+
+.change_pwd{
+    width: 93.5%;
+}
+.content1{
+    margin-top:35px;
+}
+button.list-link1.close {
+    color: #ffffff;
+    background-color: #6660B2;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 8px 25px;
+    margin-top: 29px;
+    opacity: 1;
+    margin-left: -86px;
+    text-shadow: none;
+}
+
+input.form-control.resetpassword {
+    margin-bottom: 10px;
+}
+.submit2 {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #8782D2;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-left: 38%;
+}
+.form-group.reset {
+    padding: 25px 30px;
+    line-height: 2px;
+}
+/* input.form-control.confirm-password-reset {
+    margin-bottom: 44px;
+} */
+label.confirm {
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+.reset-password-heading {
+    margin-top: 18px;
+}
+.invalid {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #ffffff;
+    margin-top: 100px;
+    padding: 18px;
+}
+h4.invalid-heading {
+    font-size: 20px;
+    font-size: 600;
+    font-weight: 600;
+    color: #000000;
+}
+p.invalid-para {
+    font-size: 13px;
+    color: #686868;
+    margin-bottom: 0;
+}
+.submit-btn{
+       background-color: #8782D2;
+    margin-top: 42px;
+}
+
+
+.forget-link-body1 {
+    padding: 10px 34px!important;
+    font-size: 15px;
+    color: #686868;
+}
+.forget-link-header1 {
+    padding: 10px 18px!important;
+}
+button.link1.close {
+    color: #564FAA;
+    opacity: 1;
+}
+.p1{
+    margin-top: -27px;
+}
+.total_rec{
+    font-size:14px;
+    padding-right:14px;
+}
+/* .col-12{
+    margin-bottom: -28px;
+} */
+/* .patientregistration{
+        margin-bottom: -15px;
+
+} */
+
+p.admission-para {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #686868;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-top:33px;
+}
+/****************************/
+/***Header Menu-Profile icon**/
+/****************************/
+
+ul.dropdown-menu.list-unstyled {
+    transform: translate3d(-170px, 18px, 0px)!important;
+    box-shadow: 0px 3px 6px #00000029;
+    border: none!important;
+}
+.dropdown-menu {
+    width: 200px;
+}   
+li.dropdown-list {
+    padding: 6px 6px;
+}
+li.dropdown-list a {
+    text-decoration: none;
+}
+li.dropdown-list img {
+    max-width: 12%;
+    margin-top: -4px;
+}
+li.dropdown-list a span {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.span.svg_icons.svg_menu_icons {
+    width: 17px;
+    margin-right: 10px;
+    top: 3px;
+}
+span.svg_icons svg {
+    width: 13%;
+    margin: auto;
+}
+svg.pencil_image {
+    width: 14px;
+    fill: white;
+    margin: auto;
+}
+span.svg_icons.edit_svg_scrol {
+    display: flex;
+}
+/***** Delete Popup****/
+.btn_save1 {
+    background-color: #6660B2;
+    color: white;
+    padding: 0px 15px;
+}
+.cancle-link1{
+    color: #6660B2;
+}
+ul.nav-container {
+    padding-left: 0;
+}
+
+.side-navbar {
+    height: 100%;
+    min-height: 95vh;
+}
+.image-box1 {
+    margin-top: 12px;
+}
+/****************Abhijeet HIMS Changes****/
+.form-group.ip-admission label {
+    font-weight: 600 !important;
+}
+label.DOB {
+    margin-bottom: 0;
+}
+ul#id_employment {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+ul#id_employment li:nth-child(2) {
+    padding-left: 25px;
+}
+.form-group.ddssy_member {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.form-group {
+    color: #686868;
+    line-height: 23px;
+    margin-top: 0;
+}
+.form-control.checkbox-select {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 12px;
+    margin-top: -7px;
+    height: 32px;
+}
+
+
+li.patient_regn a:hover {
+    color: saddlebrown !important;
+}
+li.patient_regn a:active {
+    color: saddlebrown !important;
+
+}
+.image img{
+    cursor: pointer;
+}
+.images img{
+    cursor: pointer;
+}
+/* .patient_formss {
+    margin-right: -236px;
+    margin-left: -25px;
+    margin-top: -25px;
+} */
+
+
+/****************Abhijeet HIMS Changes****/
+/****************Meghana HIMS Changes****/
+.add_more {
+    padding-left: 0 !important;
+}
+.add_more h4 {
+    margin-bottom: 19px;
+    margin-top: 13px;
+}
+.color_red {
+    color: #000000;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+a.add_doc_new img {
+    margin-top: -6px;
+}
+.add_more h4 a {
+    background-color: #ECECEC;
+    padding: 1px 15px;
+    border-radius: 5px;
+}
+li.patient_regn a:hover {
+    color: saddlebrown !important;
+}
+li.patient_regn a:active {
+    color: saddlebrown !important; 
+}
+/* .checkbox_label{
+    margin-top: -15px;
+} */
+.form-group.ip-admission {
+    margin-bottom: 1rem !important;
+}
+.create_patient_heading {
+    margin-top: 30px;
+}
+.bed_transfer_form .container-fluid:nth-child(1) {
+    padding-bottom: 0 !important;
+}
+.add_patient_input {
+    background-color: white !important;
+}
+.remove_button_new img {
+    margin-top: 35px;
+}
+.add_more_details {
+    margin-bottom: 18px;
+}
+span.change_pass {
+    display: inline-block;
+    vertical-align: middle;
+}
+.forget-password.m-auto .form-group.d-flex.frgt_pwd_err label {
+    top: 36px;
+}
+li.active_clr.active {
+    background: #F8F8FF;
+}
+li.active_clr.list-item.patient_regn.active a {
+    color: #605ABC !important;
+}
+.fee_dtl_mrg {
+    margin-top: 30px !important;
+}
+.fee_dtl_mrg input[type="checkbox"] {
+    margin-right: 5px;
+}
+.add_thead_fee {
+        margin-left: 0px;
+}
+.add_td_fee {
+    padding: 0.75rem;
+    border-bottom: 1px solid #cccccc !important;
+    border-top:  1px solid #cccccc !important;
+    padding-left: 0 !important;
+}
+.add_td_fee a {
+    font-size: 12px;
+    color: #686868 !important; 
+    font-weight: 1000 !important;
+}
+.arrow-down.edit_button {
+   cursor: pointer;
+}
+/****************Profile edit popup- start*******/
+
+h1.heading_info {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+.black_round input#id_image {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: .375rem .75rem;
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+.force-overflow label {
+    margin-bottom: 0;
+}
+.force-overflow input#id_first_name {
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    height: 32px;
+}
+.force-overflow input#id_email {
+   font-size: 12px;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    height: 32px;
+}
+.force-overflow input#id_last_name {
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    height: 32px;
+}
+#user_profile button.edit_prf_submit.btn.btn-danger.red-btn {
+    font-size: 12px;
+    /* padding: 3px 10px; */
+    border-radius: 0;
+    width: 55px;
+    background-color: #716ACA;
+    height: 21px;
+    line-height: 0;
+    border: navajowhite;
+}
+#user_profile .modal-footer {
+    border-top: none;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+    padding-right: 53px;
+}
+#user_profile a.cancle-link.dev_closepop {
+    font-size: 12px;
+    width: 55px;
+    height: 21px;
+    background-color: #AEAEAE;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+    text-transform: lowercase;
+}
+#user_profile .force-overflow {
+    max-width: 95%;
+    margin: auto;
+    position: relative;
+}
+#user_profile .modal-header {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.modal_user {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+.relative_modal {
+    margin-bottom: 30px;
+        margin-top: 20px;
+}
+span.black_round {
+    width: 30px;
+    height: 30px;
+    background-color: #2b2f39;
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+        top: 70px;
+    right: 172px;
+}
+span.black_round label {
+    cursor: pointer;
+    margin: auto;
+}
+li.nav-icon.dropdown.header_profile_img img {
+    width: 100% !important;
+    height: 100%;
+    border-radius: 100%;
+}
+img.edit_inmodule {
+    padding: 8px 8px;
+    text-align: center;
+}
+span.black_round input[type="file"] {
+    display: none;
+}
+li.nav-icon.dropdown.header_profile_img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.admin_profile_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+button.close.dev_closepop {
+    top: 20px;
+    right: 22px;
+    position: absolute;
+    opacity: 1;
+}
+img#dp_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.admin_profile_image img {
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+}
+/****************Profile edit popup- end*******/
+.modal-content.pat_hiistory_det {
+    width: 228%;
+    margin-left: -251px;
+}
+.text-center.case_hist_det {
+    width: 111%;
+}
+button.pre.btn.btn_save.show_pat_history {
+    background: none;
+    color: #716ACA;
+    border: 1px solid #716ACA;
+}
+button.pre.btn.btn_cancel.show_pat_charges {
+background: none;
+    color: #716ACA;
+    border: 1px solid #716ACA;
+}
+.save_cancel_btn_case {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 1px solid #cccccc;
+}
+.save_cancel_btn_case .next {
+    background-color: #716ACA;
+    border: none;
+    font-size: 13px;
+    border-radius: 2px;
+    color: #fff;
+    padding: 3px 16px;
+}
+.save_cancel_btn_case .pre {
+    background-color: #aeaeae;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px;
+    padding: 3px 10px;
+    margin-right: 4px;
+}
+div#style-3 p {
+    font-weight: 600;
+margin-bottom: 0;
+    width: 97%;
+    margin: auto;
+}
+.patient_history_overflow {
+    margin: 15px 0px;
+}
+.modal-body.scrollbar.personal_click.patient_history_detail {
+    overflow: auto;
+    height: 535px;
+}
+.modal-dialog.case_history {
+    padding-left: 0 !important;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+/**** header ***/
+span.live_notify_badge {
+    background-color: red;
+    width: 25px;
+    display: block;
+    height: 13px;
+    border-radius: 15px;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    right: 105px;
+}
+
+/** notification **/
+
+span.title_bread_crumb {
+    font-size: 12px;
+    margin-top: 24px;
+    display: block;
+    color: #686868;
+    margin-left: 27px;
+}
+
+
+h3.cmn_title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.bg_normal_white.notification_sec.backnd_notifi.notifiction_section {
+    padding: 15px 25px;
+    margin: 25px 0px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+}
+li.read_notify a {
+    color: #000000;
+    margin-left: 30px;
+     font-size: 16px;
+     font-weight: 600;
+}
+li.read_notify a.active {
+    color: #716ACA;
+     border-bottom: 1px solid;
+}
+li.unread_notify a {
+    color: #000000;
+    /* margin-left: 30px; */
+    font-size: 16px;
+    font-weight: 600;
+}
+li.unread_notify a.active {
+    color: #716ACA;
+     border-bottom: 1px solid;
+}
+li.unread_notify a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.common_table.table-responsive.table_position {
+    padding: 20px 0px;
+}
+
+td.no_circle p {
+    margin-bottom: 0;
+}
+td.no_circle p {
+    margin-bottom: 0;
+    background-color: #716ACA;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    line-height: 1.8;
+    margin-top: 4px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+td h5 a {
+    font-size: 11px;
+    color: #686868;
+}
+ul.nav.nav-tabs {
+    border-bottom: none !important;
+}
+td h5 {
+    margin-bottom: 0;
+}
+table.table.bg_grey_hover td {
+    font-size: 11px;
+    color: #686868;
+    border-bottom: 1px solid #dee2e6;
+    border-top: none;
+        padding: 8px 0px;
+}
+td.noti_wdth h6 {
+    margin-bottom: 0;
+    font-size: 11px;
+}
+p.disply_entries_cnt {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #686868;
+    margin-left: 15px;
+    margin-top: 3px;
+    padding-top: 33px;
+}
+span.view_noti_breadcrumb {
+    font-size: 12px;
+    margin-top: 24px;
+    display: block;
+    color: #686868;
+    margin-left: 27px;
+}
+
+.bg_normal_white.notification_sec.view_page_notification_page {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: white;
+    height: 70vh;
+     padding-left: 30px;
+    margin-top: 12px;
+    padding-top: 30px;
+}
+.common_table.table-responsive p {
+    font-size: 12px;
+    color: #686868;
+}
+input#id_mobile_no {
+    font-size: 12px;
+    color: #000000;
+}
+.row.procedure_list_width {
+    margin-top: 13px !important;
+    margin-right: 0px !important;
+}
+img.rmv_btn.exam_rmv_btn {
+    margin-top: 35px !important;
+}
+img.rmv_btn.procedure_list {
+    margin: 0px;
+}
+.modal-dialog.profile_dialog {
+    max-width: 600px;
+}
+.modal-footer.footer_button {
+    margin-right: -24px;
+}
+
+
+/*item particular starts*/
+.table-responsive.item_particular_block {
+    overflow-x: auto;
+}
+.row.item_particular {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+}
+.row.item_particular .col-sm-6 {
+    display: inline-block;
+}
+.row.item_particular .col-sm-6 {
+    padding-right: 5px !important;
+}
+.row.item_particular .col-sm-6  .remove_button_new img {
+    margin-top: 0px;
+}
+.row.item_particular .remove_block {
+    max-width: 5%
+}
+/*item particular ends*/
+
+/** item particular and terms starts **/
+.item_terms_block .fade:not(.show) {
+    opacity: 1 !important;
+}
+.item_terms_block ul.nav.nav-tabs li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #212529;
+    margin-right: 1.5rem;
+}
+.item_terms_block ul.nav.nav-tabs li a.active {
+    color: #007bff;
+}
+.
+/** item particular and terms starts **/
+
+/*** side menu toggle css ***/
+.menubar {
+    cursor: pointer;
+}
+
+.change_pwd.right_data {
+    width: 100%;
+}
+/*** side menu toggle css ***/
+
+/** error list **/
+label.error ul {
+    padding: 0;
+    margin: 0;
+}
+ul.errorlist {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ul.errorlist li {
+    list-style: none;
+    line-height: 15px;
+}
+/** error list end **/
+
+.form-control.prescription_file {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 12px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    margin-top: -7px;
+    height: 32px;
+}
+ul.dropdown-menu.list-unstyled.drop_shw li a span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.hospital_table_list tr th {
+    white-space: nowrap;
+}
+.action_table_list {
+    width: 10%;
+}
+.patient_history_blk .patient_detail_blk {
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px 0px;
+}
+.patient_history_blk .modal-body {
+    background: #f9fbfd;
+}
+.form-group label.DOB {
+    margin-bottom: 0.5rem;
+}
+{
+.tex_alig.
+text-align: center;
+}
+
+
+
+/**** item particular css on 07/07/2020 *******/
+.add_more_container.add_more_field {
+    padding-bottom: 4px;
+}
+.add_more_container.add_more_field label.error {
+    margin-bottom: 0px;
+}
+.item_particular_blk .col-sm-6:not(:first-child) {
+    margin-left: -5px;
+}
+.patientregistration.bed_transfer_form.item_particular_data.item_terms_block .container-fluid {
+    padding-bottom: 25px !important;
+}
+.patientregistration.bed_transfer_form.item_particular_data.item_terms_block .container-fluid  ul.nav-tabs li {
+        cursor: pointer;
+}
+input#id_mobile_no {
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    height: 32px;
+}
+/**** item particular css on 07/07/2020 *******/
+
+/*** HIMS CSS Ends Here ***/
+
+.pinterest {
+    background: #cb2027
+}
+
+.navbar-brand {
+    white-space: normal !important;
+}
+.navbar-image img{
+    height: 40px;
 }
